@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Focus Timer</h1>
+        <div id="currentMode" class="current-mode">Work Mode (25 min)</div>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="time-adjust">
+            <div class="time-input-group">
+                <input type="number" id="timeInput" min="1" max="60" value="2" placeholder="Minutes">
+                <button id="addTime">Add Time</button>
+                <button id="subtractTime">Subtract Time</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="mode">
+            <label class="switch">
+                <input type="checkbox" id="toggleMode">
+                <span class="slider">
+                    <span class="slider-text">Work</span>
+                    <span class="slider-text">Rest</span>
+                </span>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
